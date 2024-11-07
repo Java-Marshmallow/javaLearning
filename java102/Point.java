@@ -48,6 +48,13 @@ public class Point
         return new Point(this.x, this.y + t);
     }
 
+    public double angle()
+    {
+        System.out.println(this.x);
+        System.out.println(this.y);
+        return Math.toDegrees(Math.atan(this.y/this.x));
+    }
+
     @Override
     public String toString()
     {
