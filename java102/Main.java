@@ -19,7 +19,15 @@ public class Main {
         ArrayList<String> arr = new ArrayList<>();
         arr.add("hello");
         arr.add("world");
+        arr.set(0, "welcome");
         System.out.println(arr);
+
+        ArrayList<Boolean> conditions = new ArrayList<>(3);
+        conditions.add(true);
+        conditions.add(arr.get(0) == "hello");
+        conditions.add(conditions.get(0) || conditions.get(1));
+        System.out.println(conditions);
+
     }
 }
 
