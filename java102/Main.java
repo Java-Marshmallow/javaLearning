@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args)
     {
+
         Point p1 = new Point(0, 0);
         Point p2 = new Point(0, 4);
         Point p3 = new Point(4, 0);
@@ -28,6 +29,10 @@ public class Main {
         conditions.add(conditions.get(0) || conditions.get(1));
         System.out.println(conditions);
 
+        Grid<String> grid = new Grid<String>(5, ":3");
+        System.out.println(grid);
+        Grid<Integer> grid2 = new Grid<Integer>(22, 33);
+        System.out.println(Grid.maxSideLength);
     }
 }
 
