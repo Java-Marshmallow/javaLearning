@@ -7,6 +7,14 @@ public class Main {
     public interface Shape {
         double area();
     }
+
+    static double sumArea(Shape[] shapes) {
+        double sum = 0;
+        for (Shape shape : shapes) {
+            sum += shape.area();
+        }
+        return sum;
+    }
     
     public static void main(String[] args)
     {
@@ -38,7 +46,13 @@ public class Main {
         System.out.println(grid);
         Grid<Integer> grid2 = new Grid<Integer>(22, 33);
         System.out.println(Grid.maxSideLength);
+        Square pants = new Square(new Point(0, 1), 5);
+        System.out.println(pants);
+        Circle bob = new Circle(new Point(4, 3), 13);
+        Shape[] shapes = {bob, pants};
+        System.out.println(sumArea(shapes));
     }
 }
 
 //ArrayList is basically the same as a vector in C++
+//test
