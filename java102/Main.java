@@ -3,6 +3,11 @@ package java102;
 import java.util.ArrayList;
 
 public class Main {
+
+    public interface Shape {
+        double area();
+    }
+    
     public static void main(String[] args)
     {
 
