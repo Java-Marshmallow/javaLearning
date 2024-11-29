@@ -22,5 +22,15 @@ public class Main
 
         int[] list = {0, 1, 1, 3, 5, 7, 9};
         System.out.println(PracticeProblems.countOccurences(list, 1));
+        int[] reversedList = PracticeProblems.reverseArray(list);
+        for(int i = 0; i < reversedList.length; i++) System.out.println(reversedList[i]);
+        double[][] list2D = 
+        {
+            {1, 3, 5},
+            {7, 9, 11},
+            {13, 15, 17}
+        };
+        System.out.println(PracticeProblems.sumGrid(list2D));
+        System.out.println(PracticeProblems.fib(9));
     }
 }
