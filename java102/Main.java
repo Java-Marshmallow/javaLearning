@@ -77,6 +77,7 @@ public class Main {
         Circle bob = new Circle(new Point(4, 3), 13);
         Shape[] shapes = {bob, pants};
         System.out.println(sumArea(shapes));
+        System.out.println(Grid.maxSideLength());
     }
 }
 

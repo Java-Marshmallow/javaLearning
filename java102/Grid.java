@@ -22,6 +22,11 @@ public class Grid<T> {
         }
     }
 
+    public static int maxSideLength()
+    {
+        return maxSideLength;
+    }
+
     public T get(int row, int col) {return this.grid.get(row).get(col);}
     public void set(int row, int col, T val) {this.grid.get(row).set(col, val);}
     public ArrayList<T> diagonal()
