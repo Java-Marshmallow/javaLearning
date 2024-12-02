@@ -41,6 +41,25 @@ public class Main {
         }
         return sum;
     }
+
+    public static void returnAll (LibraryItem[] items)
+    {
+        for(int i = 0; i < items.length; i++) 
+        {
+            items[i].returnItem();
+        }
+        System.out.println("All items returned.");
+    }
+
+    public static ArrayList<LibraryItem> availableItems(LibraryItem[] items)
+    {
+        ArrayList<LibraryItem> availableItems = new ArrayList<LibraryItem>();
+        for(int i = 0; i < items.length; i++)
+        {
+            if(items[i].available()) availableItems.add(items[i]);
+        }
+        return(availableItems);
+    }
     
     public static void main(String[] args)
     {
