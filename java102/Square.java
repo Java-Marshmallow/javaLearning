@@ -58,14 +58,11 @@ public class Square implements Shape {
 	}
 
 	public Point[] corners() {
-
-		Point[] corners = {
-			new Point(this.corner.x, this.corner.y),
-			new Point(this.sideLength + this.corner.x, this.corner.y),
-			new Point(this.corner.x, this.corner.y + sideLength),
-			new Point(this.corner.x + sideLength, this.corner.y + sideLength)
-		};
-
+		Point a = this.corner;
+		Point b = new Point(this.corner.x + this.sideLength, this.corner.y);
+		Point c = new Point(this.corner.x + this.sideLength, this.corner.y + this.sideLength);
+		Point d = new Point(this.corner.x + sideLength, this.corner.y);
+		Point[] corners = {a, b, c, d};
         return corners;
 	}
 
